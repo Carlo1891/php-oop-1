@@ -2,6 +2,9 @@
 
     include __DIR__ . '/class/movies.php';
 
+    $movieOne = new Movie ("Encanto", "2021");
+    $movieTwo = new Movie ("Big Hero 6", "2014");
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +22,36 @@
         </head>
 
         <main>
-            lista
+            <ul>
+
+                <li>
+                    <strong>
+                        <?php
+                            echo $movieOne -> getTitle();
+                        ?>
+                    </strong>
+                </li>
+
+                <li>
+                    <?php
+                        echo $movieOne -> getYear();
+                    ?>
+                </li>
+
+                <li>
+                    <strong>
+                        <?php
+                            echo $movieTwo -> getTitle();
+                        ?>
+                    </strong>
+                </li>
+
+                <li>
+                    <?php
+                        echo $movieTwo -> getYear();
+                    ?>
+                </li>
+            </ul>
         </main>
         
     </body>
