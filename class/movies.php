@@ -9,7 +9,7 @@
         function __construct ($_title, $_year)
         {
             $this -> title= $_title;
-            $this -> title= $_year;
+            $this -> year= $_year;
         }
 
         public function getTitle(){
