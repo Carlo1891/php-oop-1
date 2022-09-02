@@ -2,6 +2,8 @@
 
 <?php 
 
+    include __DIR__ . '/../data/db.php';
+
     class Movie {
         public $title;
         public $year;
@@ -20,5 +22,3 @@
             return $this -> year;
         }
     }
-
-?>
